@@ -10,6 +10,7 @@ GITHUB_CHARTS_BRANCH := $(or $(GITHUB_CHARTS_BRANCH),gh-pages)
 build: clean
 	helm init --client-only
 	helm repo add almerico https://almerico.github.io/helmrepo/
+	helm repo add activiti https://activiti.github.io/activiti-cloud-charts/
 	helm dependency build
 	helm lint
 

@@ -1,7 +1,7 @@
 pull_request_rules:
   - name: automatic merge for Dependabot pull requests on master
     conditions:
-      - author=almerico`
+      - author=almerico
       - base=master
     actions:
       merge:

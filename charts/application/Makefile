@@ -9,6 +9,7 @@ GITHUB_CHARTS_BRANCH := $(or $(GITHUB_CHARTS_BRANCH),gh-pages)
 
 build: clean
 	helm init --client-only
+	helm repo add https://almerico.github.io/helmrepo/
 	helm dependency build
 	helm lint
 

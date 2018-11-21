@@ -6,6 +6,7 @@ activiti-cloud-query:
 activiti-cloud-audit:
   enabled: true
 
+
 querypostgresql:
    postgresPassword: query
 

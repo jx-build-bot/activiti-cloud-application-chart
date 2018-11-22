@@ -2,6 +2,7 @@ SHELL := /bin/bash
 NAME := activiti-cloud-application-chart
 OS := $(shell uname)
 
+
 all: build
 
 check: build test
